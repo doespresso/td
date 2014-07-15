@@ -1,0 +1,18 @@
+{
+  "name": "animate.css-helpers",
+  "commit": "c9aec2b856faf4dedd57afbeaa596f532dc43262",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jchaney01/animate.css-helpers.git"
+  },
+  "homepage": "https://github.com/jchaney01/animate.css-helpers",
+  "_release": "ad33ec3061",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ad33ec3061c8c0b1e87fd2737dda463d305b7896"
+  },
+  "_source": "git://github.com/jchaney01/animate.css-helpers.git",
+  "_target": "*",
+  "_originalSource": "animate.css-helpers"
+}

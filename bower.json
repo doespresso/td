@@ -1,0 +1,32 @@
+{
+  "name": "segmental",
+  "version": "0.0.0",
+  "description": "segmental application skeleton",
+  "authors": [
+    "segmental"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.9",
+    "bootstrap": "3.2.0",
+    "backbone": null,
+    "underscore": null,
+    "requirejs": null,
+    "pace": null,
+    "Snap.svg": null,
+    "skrollr": null,
+    "swiper": null,
+    "swiper-scrollbar": null,
+    "swiper-3d-flow": null,
+    "swiper-hash-navigation": null,
+    "swiper-smooth-progress": null,
+    "skrollr-menu": null,
+    "backbone.marionette": null,
+    "animate.css": null,
+    "animate.css-helpers": null,
+    "bootstrap-select": null,
+    "switchery": null,
+    "odometer": null
+  }
+}

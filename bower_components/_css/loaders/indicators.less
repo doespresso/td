@@ -1,0 +1,101 @@
+.animation-fill-mode(@mode:forwards){
+  animation-fill-mode:@mode;
+  -webkit-animation-fill-mode:@mode;
+}
+
+@keyframes r360 {
+  from {
+    .rotate(0deg);
+  }
+  to {
+    .rotate(360deg);
+  }
+}
+
+@-webkit-keyframes r360 {
+  from {
+    .rotate(0deg);
+  }
+  to {
+    .rotate(360deg);
+  }
+}
+
+
+#leroy-loader{
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:20000;
+  #bg-rgba(cyan, 0.49);
+  .indicator{
+    @w:40px;
+    @h:40px;
+    position: fixed;
+    width:@w;
+    height:@h;
+    display: inline-block;
+    left:50%;
+    top:50%;
+    margin-top:-@h/2;
+    margin-left:-@w/2;
+    background-color: white;
+//    .animation-name(infinite-spinning);
+//    .animation-duration(4s);
+//    .animation-iteration-count(10);
+////    .animation-direction("alternate");
+//    .animation-timing-function(ease-out);
+////    .animation-fill-mode("forwards");
+//    .animation-delay(2s);
+    .animation-name(r360);
+    .animation-timing-function(linear);
+    .animation-duration(2s);
+    .animation-direction(alternate);
+    .animation-iteration-count(infinite);
+    .animation-fill-mode(both);
+  }
+}
+
+.l{
+  @w:220px;
+  @h:220px;
+  position: absolute;
+  width:@w;
+  height:@h;
+  display: inline-block;
+  left:50%;
+  top:50%;
+  margin-top:-@h/2;
+  margin-left:-@w/2;
+  path{
+    stroke-width:0.5;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: dash 3s linear alternate infinite;
+    -webkit-animation: dash 3s linear alternate infinite;
+    .animation-delay(1s);
+  }
+.opacity(0.2);
+}
+
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+

@@ -1,0 +1,99 @@
+.event-list {
+  width: 100%;
+  display: block;
+}
+
+.event {
+
+  background-color: @gray-light;
+
+  @w: 300px;
+  @h: @w;
+  display: inline-block;
+  padding: @gap @gap;
+  width: @w;
+  //  height:@h;
+  margin: 0 auto;
+  @font-size: 200px;
+  position: relative;
+  border: 6px solid transparent;
+  text-align: center;
+  overflow: hidden;
+  .picture {
+    @w: 200px;
+    width: @w;
+    height: @w;
+    //    display: inline-block;
+    display: none;
+    position: absolute;
+    left: 50%;
+    //    top:50%;
+    margin-left: -@w/2;
+    margin-top: -12%;
+    z-index: -1;
+    .opacity(0.1);
+  }
+  #strike {
+    position: absolute;
+    content: '';
+    height: 1px;
+    //    background-color: darken(@gray-lighter,0%);
+    background-color: #fff;
+    width: 300px;
+    margin-left: -150px;
+    left: 50%;
+    top: 50%;
+  }
+
+  .dayofmonth {
+    font-size: @font-size;
+    line-height: @font-size*0.85;
+    font-family: @font-family-titles-2; //'UKIJQolyazma';
+  }
+  .month {
+    @spacing: 8px;
+    font-size: 16px;
+    font-family: 'UKIJQolyazma';
+    text-transform: uppercase;
+    letter-spacing: @spacing;
+    padding-left: @spacing;
+    margin-bottom: 0;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: @gap/2;
+    margin-top: @gap/3;
+  }
+  .desc {
+    display: inline-block;
+    line-height: 1.2;
+  }
+  &.past {
+    color: @gray-lighter;
+    hr {
+      border-color: @gray-lighter
+    }
+    border-color: transparent !important;
+    &:before {
+      .rotate(-45deg);
+      #strike;
+    }
+    &:after {
+      display: none;
+      //      .rotate(-45deg);
+      #strike;
+    }
+  }
+  hr {
+    margin: @gap/3 auto;
+  }
+  &.active {
+//    border: 6px #fff solid;
+//    color: #fff;
+    hr {
+//      border-color: #fff
+    }
+    .transition(all 0.3s linear);
+  }
+}

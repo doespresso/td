@@ -1,0 +1,36 @@
+@t-font-familyname:    "UKIJQolyazma";
+@t-font-name:          "UKIJQolyazma";
+@t-font-name-bold:     "UKIJQolyazma";
+@t-font-name-italic:   "UKIJQolyazma";
+@font-face {
+	font-family: @t-font-familyname;
+	src:url('@{t-font-path}@{t-font-name}.eot');
+	src:url('@{t-font-path}@{t-font-name}.eot?#iefix') format('embedded-opentype'),
+		url('@{t-font-path}@{t-font-name}.ttf') format('truetype'),
+		url('@{t-font-path}@{t-font-name}.woff') format('woff'),
+		url('@{t-font-path}@{t-font-name}.svg#@{t-font-familyname}') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: @t-font-familyname;
+	src:url('@{t-font-path}@{t-font-name-bold}.eot');
+	src:url('@{t-font-path}@{t-font-name-bold}.eot?#iefix') format('embedded-opentype'),
+		url('@{t-font-path}@{t-font-name-bold}.ttf') format('truetype'),
+		url('@{t-font-path}@{t-font-name-bold}.woff') format('woff'),
+		url('@{t-font-path}@{t-font-name-bold}.svg#@{t-font-familyname}') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: @t-font-familyname;
+	src:url('@{t-font-path}@{t-font-name-italic}.eot');
+	src:url('@{t-font-path}@{t-font-name-italic}.eot?#iefix') format('embedded-opentype'),
+		url('@{t-font-path}@{t-font-name-italic}.ttf') format('truetype'),
+		url('@{t-font-path}@{t-font-name-italic}.woff') format('woff'),
+		url('@{t-font-path}@{t-font-name-italic}.svg#@{t-font-familyname}') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}

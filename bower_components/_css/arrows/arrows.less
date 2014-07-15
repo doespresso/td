@@ -1,0 +1,213 @@
+.transfrom-rt(@x;@y;@degrees;) {
+  -webkit-transform: rotate(@degrees) translate(@x, @y);
+  -ms-transform: rotate(@degrees) translate(@x, @y); // IE9 only
+  transform: rotate(@degrees) translate(@x, @y);
+}
+
+
+@ui-arrow-size:42px;
+
+//.ui-arrow{
+//  display:block;
+//  position:absolute;
+//  top:50%;
+//  width: @ui-arrow-size;
+//  height:@ui-arrow-size;
+//  margin: -(@ui-arrow-size/2) @ui-arrow-size/2 0 @ui-arrow-size/2;
+//  font-size: @ui-arrow-size;
+//  line-height: @ui-arrow-size+2px;
+//  background-color: transparent;
+//  border:none;
+//  padding:0;
+//  color:#fff;
+//  z-index:610;
+//  cursor: pointer;
+//  font-family: @icon-font-name;
+//
+//  &:hover{.opacity(1);}
+//
+//}
+//.ui-arrow.next{
+//  right:0px;
+//  text-align: center;
+//}
+//.ui-arrow.next:before{
+//  content:'\e68d';
+//}
+//.ui-arrow.prev{
+//  left:0px;
+//  text-align: center;
+//}
+//.ui-arrow.prev:before{
+//  content:'\e68e';
+//}
+//
+//html.touch{
+//  .ui-arrow{display:none!important}
+//}
+
+
+#11111111presentation{
+  @s1:30px;
+  @c:#fff;
+  @th:4px;
+  .ui-arrow{
+    display:block;
+    position:absolute;
+    top:50%;
+    width: @s1*2;
+    height:@th;
+//    margin: -(@ui-arrow-size/2) @ui-arrow-size/2 0 @ui-arrow-size/2;
+    margin: 0 @s1;
+    font-size: @ui-arrow-size;
+    line-height: @ui-arrow-size+2px;
+    background-color: transparent;
+    border:none;
+    padding:0;
+    z-index:610;
+    cursor: pointer;
+    font-family: @icon-font-name;
+    background-color: @c;
+    .transition(1s);
+
+    &:before,&:after{
+      content:'';
+      width:@s1/1.5;
+      height:@th;
+      background-color: @c;
+      display:block;
+      position:absolute;
+      right:-2px;
+      .transition(1s);
+    }
+    &.next{
+      right:0px;
+      &:before,&:after{
+        right:-2px;
+      }
+    }
+    &.prev{
+      left:0px;
+      &:before,&:after{
+        left:-2px;
+      }
+    }
+
+    &:hover{
+      &:before,&:after{width:@s1*1.5};
+    }
+  }
+
+
+  .ui-arrow.next:before{
+    .transform-origin(100% 2px);
+    .transfrom-rt(0;floor(@th/2);45deg);
+  }
+  .ui-arrow.next:after{
+    .transfrom-rt(0;floor(-@th/2);-45deg);
+    .transform-origin(100% 2px);
+  }
+
+  .ui-arrow.prev:before{
+    .transform-origin(0% 2px);
+    .transfrom-rt(0;floor(-@th/2);45deg);
+  }
+  .ui-arrow.prev:after{
+    .transfrom-rt(0;floor(@th/2);-45deg);
+    .transform-origin(0% 2px);
+  }
+
+  html.touch{
+    .ui-arrow{display:none!important}
+  }
+
+
+}
+
+
+
+#presentation{
+  @s1:28px;
+  @c:#fff;
+  @th:4px;
+  .ui-arrow{
+    display:block;
+    position:absolute;
+//    bottom:@gap + @s1/2;
+    top:50%;
+    width: @s1;
+    height: @s1;
+    border-left:@th @c solid;
+    border-top:@th @c solid;
+    //    margin: -(@ui-arrow-size/2) @ui-arrow-size/2 0 @ui-arrow-size/2;
+    margin: 0 @s1;
+    font-size: @ui-arrow-size;
+    line-height: @ui-arrow-size+2px;
+    padding:0;
+    z-index:600;
+    cursor: pointer;
+    font-family: @icon-font-name;
+//    background-color: red;
+    .transition(1s);
+
+
+    &:before{
+      content:'';
+      width:@s1*3;
+      height:@th;
+      background-color: @c;
+      display:block;
+      position:absolute;
+      left:0px;
+      top:0px;
+      .transition(1s);
+      .transfrom-rt(0;-@th/2;45deg);
+      .transform-origin(0% 0%);
+//      background-color: green;
+      background-color: @c;
+    }
+    &.next{
+      .rotate(135deg);
+      right:0px;
+//      &:before,&:after{
+//        right:-2px;
+//      }
+    }
+    &.prev{
+      left:0px;
+      .rotate(-45deg);
+//      &:before,&:after{
+//        left:-2px;
+//      }
+    }
+
+    &:hover{
+      &:before{width:@s1*4};
+    }
+  }
+
+
+//  .ui-arrow.next:before{
+//    .transform-origin(100% 2px);
+//    .transfrom-rt(0;floor(@th/2);45deg);
+//  }
+//  .ui-arrow.next:after{
+//    .transfrom-rt(0;floor(-@th/2);-45deg);
+//    .transform-origin(100% 2px);
+//  }
+//
+//  .ui-arrow.prev:before{
+//    .transform-origin(0% 2px);
+//    .transfrom-rt(0;floor(-@th/2);45deg);
+//  }
+//  .ui-arrow.prev:after{
+//    .transfrom-rt(0;floor(@th/2);-45deg);
+//    .transform-origin(0% 2px);
+//  }
+
+  html.touch{
+    .ui-arrow{display:none!important}
+  }
+
+
+}

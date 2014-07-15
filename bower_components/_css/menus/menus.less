@@ -1,0 +1,39 @@
+//@import "menus-menu-slide.less";
+.menu {
+  list-style: none;
+  padding:@padl*2;
+  margin: 0;
+  li {
+    font-size:14px;
+    font-family:"ProximaNova";
+    white-space: nowrap;
+    margin-bottom:10px;
+    a{
+      color:@gray-darker;
+      padding-bottom:1px;
+//      border-bottom:1px solid rgba(0,0,0,0.07);
+      .aniline;
+    }
+  }
+}
+
+.aniline{
+  position:relative;
+  &:before{
+    content:'';
+    height:1px;
+    display:block;
+    position:absolute;
+    background-color:@gray-darker;
+    left:50%;
+    bottom:-1px;
+    width:0px;
+//    .transition(0.2s);
+  }
+  &:hover{
+    &:before{
+      left:0;
+      width:100%;
+    }
+  }
+}

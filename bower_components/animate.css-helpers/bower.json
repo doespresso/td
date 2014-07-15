@@ -1,0 +1,9 @@
+{
+  "name": "animate.css-helpers",
+  "version": "0.0.1",
+  "commit": "c9aec2b856faf4dedd57afbeaa596f532dc43262",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jchaney01/animate.css-helpers.git"
+  }
+}

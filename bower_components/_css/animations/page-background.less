@@ -1,0 +1,99 @@
+
+#pbg{
+  position:fixed;
+  z-index:-1;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  display: block;
+  overflow: hidden;
+//  background-color: @gray-light;
+}
+
+#pbg-bg(@z-index:2){
+  position:fixed;
+  z-index:0 - @z-index;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+//  display: block;
+//  overflow: hidden;
+  #bg-cover();
+//  display: none;
+}
+
+
+#image-bg{
+  #pbg-bg(@z-index:3);
+//  background-color: @gray;
+  .opacity(1);
+  .bgitem{
+    #bg-cover();
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    .opacity(0);
+    .transition(all 0.5s linear);
+    &.active{
+      .opacity(1);
+    }
+  }
+  &.showed{
+   .opacity(1);
+  }
+}
+
+#photo-bg{
+  #pbg-bg(@z-index:4);
+  //  background-color: @gray;
+  .opacity(1);
+  .bgitem{
+    #bg-cover();
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    .opacity(0);
+    .transition(all 0.5s linear);
+    &.active{
+      .opacity(1);
+    }
+  }
+  &.showed{
+    .opacity(1);
+  }
+}
+
+
+#slide-bg{
+  #pbg-bg(@z-index:4);
+  background-color:#fff;
+    #bg-cover();
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+  .transition(all 1s linear);
+  -moz-transition-property:backgrounds;
+}
+
+#video-bg{
+  #pbg-bg(@z-index:2);
+  background-color: green;
+//  display: none;
+  //  .opacity(0.3);
+}
+
+
+/////////////////page mutators/////////////////
+.body-dark-bg{
+  * {color:#fff}
+}
+
+

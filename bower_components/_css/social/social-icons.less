@@ -1,0 +1,22 @@
+.social-icons {
+  @is: 36px;
+  margin: 0 auto;
+  display: inline-block;
+  #facebook:hover {
+    color: #627aad;
+  }
+  #instagram:hover {
+    color: #938374;
+  }
+  #twitter:hover {
+    color: #63b0c9;
+  }
+  a {
+    text-decoration: none !important;
+    color: @gray-light;
+  }
+  [class*=icon] {
+    font-size: @is;
+    margin: 0 @gap/4;
+  }
+}

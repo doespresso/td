@@ -1,0 +1,45 @@
+hr{width: 20px; border-color: @gray-light;}
+.title-icon{
+  display: inline-block;
+  position: relative;
+  padding:@gap/2;
+  @fs:46px;
+  font-size:@fs;
+  color:lighten(@gray-light,30%);
+}
+
+
+#page-content{
+  margin-top:@topf*2;
+  margin-bottom:@topf*2;
+  @media(max-width:@screen-phone){
+    margin-top:@topf*1.6;
+  }
+}
+
+#text-content{
+  margin-top:@topf*2;
+  margin-bottom:@topf*2;
+}
+
+#page-content{
+  .content{
+    @media(max-width:@screen-sm-max){
+      padding:0 @padl*2;
+    }
+  }
+  h1{
+    font-size:18px;
+    font-family:ProximaNova;
+    font-weight:normal;
+    margin-bottom:@gap*2;
+    @media(min-width:@screen-tablet){
+      font-size:32px;
+      margin-left:-1px;
+    }
+    @media(min-width:@screen-md){
+      font-size:12px;
+      margin-left:-2px;
+    }
+  }
+}

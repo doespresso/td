@@ -1,0 +1,116 @@
+.menu-nav{
+  @items:5;
+  @s1:120px;
+//  display: block;
+//  width:100%;
+//  margin:@gap auto;
+  text-align:center;
+//  overflow:hidden;
+//  width:100%;
+  width:@s1 * @items;
+  @media (max-width:@screen-xs-max){
+    width:100%;
+  }
+  margin:0 auto;
+//  border:1px blue solid;
+//  position:relative;
+
+
+  a{
+    width:@s1;
+    margin:0;
+    padding:0;
+    display: block;
+    text-decoration: none!important;
+    overflow: hidden;
+    .menu-icon{
+      display:block;
+      margin:0;
+      padding:0;
+      height:70px;
+      width:100%;
+      clear:both;
+    }
+    .menu-title{
+      font-family: "ProximaNova",Arial;
+      font-weight:bold;
+      font-size:11px;
+      line-height: 1;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+    svg{
+      display:inline-block;
+      margin:0 auto;
+      height:60px;
+      width:100%;
+      clear:both;
+      margin-bottom: @gap/2;
+      path,rect,poligon{
+        fill:@gray-light;
+      }
+    }
+    &:hover{
+      svg{
+        path,rect,poligon{
+          fill:#777;
+        }
+      }
+    }
+  }
+
+  &.active{}
+
+
+}
+
+
+
+
+
+.menu-content{
+  position:fixed;
+  z-index:6000;
+  left:0;
+  top:0%;
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+  background-color:transparent;
+  overflow:hidden;
+//  overflow-y:auto
+}
+
+.menu-cat{
+  width:100%;
+  text-align:center;
+  padding-bottom:@gap;
+  h2{color:#fff;}
+  h3{
+    font-family:@font-family-titles-1;
+    font-weight:normal;
+    margin: @gap 0 @gap/2 0;
+    @media (min-width:@screen-lg){
+      font-size: 18px;
+    }
+  }
+  .dish{
+    margin-bottom: @gap/2;
+    .orig{}
+    .alt{}
+    .price-rub{
+
+    }
+  }
+
+}
+
+
+.menu-list{
+  h1,h2,h3{text-align:center}
+  h2{position:fixed; width:100%; height:40px; text-align:center}
+  width:100%;
+  height:100%;
+  overflow-y:auto;
+}

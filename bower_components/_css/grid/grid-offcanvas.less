@@ -1,0 +1,119 @@
+
+
+/////////////////////////////
+
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.9);
+  z-index:100;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  background:transparent;
+  width: @padl*5;
+  height: @padl*5;
+  position: absolute;
+  right: @padl/2;
+  top: @padl/2;
+  overflow: hidden;
+  border: none;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 101;
+  &:before,&:after{
+    content:'';
+    position:absolute;
+    left:0;
+    top:50%;
+    width:100%;
+    height:1px;
+    display:block;
+    background-color:#fff;
+  }
+  &:before{
+    .rotate(45deg);
+  }
+  &:after{
+    .rotate(-45deg);
+  }
+}
+
+/* Menu style */
+.overlay nav {
+  text-align: left;
+  position: relative;
+  top: @padl*5;
+//  -webkit-transform: translateY(-50%);
+//  transform: translateY(-50%);
+//  -webkit-transform: skew(0deg, -15deg);
+//  -moz-transform: skew(0deg, -15deg);
+//  -o-transform: skew(0deg, -15deg);
+//  -ms-transform: skew(0deg, -15deg);
+//  transform: skew(0deg, -15deg);
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  width:100%;
+  position: relative;
+}
+
+.overlay ul li {
+  display: block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-family:ProximaNova,Arial;
+  text-transform:uppercase;
+}
+
+.overlay ul li a {
+  font-size: 18px;
+  font-size: 3vh;
+  line-height:1;
+  font-weight:bold;
+  letter-spacing:7px;
+  display: block;
+//  border-bottom:1px #fff solid;
+  width:100%;
+  padding:@padl/2 @padl*2;
+  padding:1.5vh @padl*2;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #f0f0f0;
+}
+
+/* Effects */
+.overlay-corner {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(50px) translateX(50px);
+  transform: translateY(50px) translateX(50px);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-corner.open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
