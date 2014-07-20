@@ -1,0 +1,212 @@
+.main_cont{
+height:100%
+}
+body{
+color:#000;
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+font-size:12px;
+margin:0px;
+padding:0px;
+background:#FFF;
+}
+a, a:visited{
+color:#94521D;
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+font-size:12px;
+text-decoration:underline
+}
+a:hover{text-decoration:none}
+form{padding:0px;margin:0px;}
+input, textarea, select{
+        font-family: Tahoma, Arial, Helvetica, sans-serif;
+        font-size: 12px
+}
+td{font-size:12px}
+
+#h_cont{
+background:url(/setup/images/h_fon.jpg) 0 0 repeat-x #F2F2F2;
+}
+h1, h2, h3, h4, h5, h6{
+background:url(/setup/images/h_r.jpg) 100% 0 no-repeat;
+color:#656565;
+margin:0;
+padding:16px 9px 14px;
+border-bottom:1px solid #CFCFCF;
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+font-size:14px;
+letter-spacing:1px;
+line-height:14px
+}
+hr{
+border:none;
+border-bottom:1px solid #1A3937;
+color:#1A3937;
+height:1px;
+}
+img{border:none}
+p{
+text-indent: 20px;
+line-height:17px;
+color:#767676
+}
+    .block p{margin:0}
+.clear{
+clear:both;
+height:0px;
+font-size:0px;
+line-height:0px
+}
+
+.main_cont{
+position:relative;
+min-width:1000px;
+max-width:1600px;
+width:100%;
+width:expression(((document.compatMode && document.compatMode=='CSS1Compat') ? document.documentElement.clientWidth:document.body.clientWidth) > 1600 ? "1600px": (((document.compatMode && document.compatMode=='CSS1Compat') ? document.documentElement.clientWidth:document.body.clientWidth) < 1000 ? "1000px":"100%"));
+text-align:left
+}
+.main_cont_inn{background:url(/setup/images/top_right_fon.gif) 0 0 no-repeat}
+
+#centFon{background:url(/setup/images/l_fon.gif) 0 0 repeat-y}
+.cent_tb{
+width:100%;
+border:none;
+border-collapse:collapse;
+background:url(/setup/images/l_top.jpg) 0 0 no-repeat;
+height:74%
+}
+.cent_tb td{vertical-align:top}
+#left_column{
+width:274px; 
+padding:288px 0 46px; 
+background:url(/setup/images/line.gif) 0 100% no-repeat;
+}
+#center_column{padding:0 0 46px;}
+
+/*иряър*/
+#header{
+background: url(/setup/images/header.jpg) 100% 0 repeat-x;
+}
+#header_l{
+background:url(/setup/images/header_l.jpg) 0 0 repeat-x;
+width:255px;
+height:136px;
+float:left;
+}
+#header_r{
+background:url(/setup/images/header_r.jpg) 100% 0 no-repeat;
+height:136px
+}
+    #header_l img{
+    margin:0 0 0 6px
+    }
+
+#l_menu_cont{background:url(/setup/images/menu_fon.jpg) 0 100% repeat-x #FFF5E0}
+#l_menu_right{background:url(/setup/images/side_r.gif) 100% 0 repeat-y}
+#l_menu_rt{background:url(/setup/images/c_rt.gif) 100% 0 no-repeat}
+#l_menu_rb{background:url(/setup/images/c_rb.gif) 100% 100% no-repeat}
+
+#left_menu{
+list-style:none;
+padding:20px 20px 8px 11px;
+margin:0;
+}
+#left_menu li{
+position:relative;
+padding:0 0 18px 17px;
+font-weight:bold
+}
+#left_menu li.instDone{
+background:url(/setup/images/bullet.gif) 0 2px no-repeat; 
+color:#9E9E9E
+}
+#left_menu li.instCurr{
+background:url(/setup/images/bullet_sel.gif) 0 2px no-repeat; 
+color:#DE4100
+}
+#left_menu div{float:right; font-size:10px; padding-top:3px}
+    
+#content{
+padding:20px 130px 0 40px;
+background:url(/setup/images/cent_fon.jpg) 100% 0 no-repeat
+}
+.textSel{
+color:#A40003;
+font-size:12px
+}
+#footer .textSel{font-size:12px}
+
+.f_tb{
+width:auto;
+border:none;
+border-collapse:collapse;
+margin:10px 0 0
+}
+.f_tb td{
+vertical-align:middle
+}
+.title{
+color:#E94C00;
+padding:35px 0 12px 0;
+font-weight:bold;
+background:url(/setup/images/dot.gif) 0 46px repeat-x
+}
+    .title div{float:left; background:#FFF; padding:0 9px 0 2px}
+.l_td{
+padding:3px 0 3px 2px;
+width:185px
+}
+.r_td{
+padding:3px 0 3px 10px
+}
+.r_td input, .r_td textarea{
+width:211px;
+border:1px solid #C7BDA8
+}
+.r_td input{height:22px}
+.r_td textarea{height:177px}
+.subm{
+border:none;
+color:#585151;
+font-size:11px;
+height:22px;
+margin:21px 0 0;
+width:94px;
+background:url(/setup/images/butt_fon.gif) 0 0 no-repeat;
+cursor:pointer
+}
+
+#footer{
+background:#F0F0F0
+}
+#footer_r{
+background:url(/setup/images/l_fon.gif) 0 0 repeat-y;
+width: 245px;
+padding: 25px 10px 10px 10px;
+font-size: 11px;
+vertical-align: top
+}
+.copyright{
+padding: 10px
+}
+.copyright a, .copyright a:VISITED, .copyright a:HOVER{font-size: 11px}
+#footer_l{
+padding:25px 25px 10px 25px;
+font-size:11px;
+vertical-align: top
+}
+#footer_l a, #footer_l a:VISITED, #footer_l a:HOVER{font-size: 11px}
+.delim{
+width: 100%;
+height: 20px;
+background:url(/setup/images/dot.gif) 0 10px repeat-x
+}
+div.ok{
+color: green;
+}
+div.error{
+color:red;
+}
+#size{
+color: green;
+}

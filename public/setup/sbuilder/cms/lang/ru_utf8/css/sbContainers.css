@@ -1,0 +1,80 @@
+.sbDS_div {
+    width: 100%;
+    padding-bottom: 5px;
+}
+.sbDS_block {
+    background-color: #fff5e0;
+    border: 1px solid #000;
+}
+.sbDS_close {
+    font-weight: bold;
+    width: 20px;
+    height: 24px;
+    text-align: center;
+    padding: 0px 3px 0px 3px;
+    cursor: pointer;
+}
+.sbDS_minmax {
+    font-weight: bold;
+    width: 20px;
+    height: 24px;
+    text-align: center;
+    padding: 0px 3px 0px 3px;
+    cursor: pointer;
+}
+.sbDS_reload {
+    font-weight: bold;
+    width: 20px;
+    height: 24px;
+    text-align: center;
+    padding: 0px 3px 0px 3px;
+    cursor: pointer;
+}
+.sbDS_image {
+    width: 16px;
+    height: 16px; 
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.sbDS_title_tr {
+    height: 24px;
+    color: #fff;
+    font-weight: bold;
+    background: url(/cms/images/headerbg.jpg);
+}
+.sbDS_title {
+	height: 24px;
+    width: 99%;
+    cursor: move;
+}
+.sbDS_icons {
+	height: 24px;
+    margin-right: 3px;
+    cursor: hand;
+    cursor: pointer;
+}
+.sbDS_content {
+    width: 100%;
+}
+
+.sbDS_content td, .sbDS_content a {
+	font-size: 11px !important;
+}
+
+.sbDS_capacity {
+    padding: 3px;
+}
+
+.sbDS_more {
+    padding: 5px;
+    text-align: right;
+}
+
+.sbDS_date {
+	font-size: 9px;
+	background-color: #FFFFE1;
+	padding: 3px;
+	border: 1px dotted #000;
+	float: left;
+	width: 130px;
+}

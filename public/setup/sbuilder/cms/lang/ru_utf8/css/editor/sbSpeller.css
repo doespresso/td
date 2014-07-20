@@ -1,0 +1,18 @@
+.blend 
+{
+	font-family: courier new;
+	font-size: 16px;
+	font-style: Italic;
+	border: 0;
+	margin-bottom:-1;
+	-moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.plainText 
+{
+	font-family: Verdana, Arial, Tahoma;
+	font-size: 12px;
+	color: #000;
+	background-color: #FFF;
+}

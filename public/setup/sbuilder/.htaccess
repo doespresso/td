@@ -1,0 +1,42 @@
+#
+# Apache/PHP/S.Builder settings:
+#
+
+# Страница для 404 ошибки
+#ErrorDocument 404 /index.php
+#ErrorDocument 403 /index.php
+#ErrorDocument 401 /index.php
+
+# Не показывать контент директорий, в которых нет файла index.php
+Options -Indexes
+
+# Переходить по символическим ссылкам в директории
+Options +FollowSymLinks
+
+# Выставляем нужные настройки PHP
+# PHP 5, Apache 1 and 2.
+php_value magic_quotes_gpc                0
+php_value register_globals                0
+php_value session.auto_start              0
+php_value session.use_cookies             1
+php_value session.use_only_cookies        1
+php_value session.cookie_lifetime         0
+
+# Подключаем mod_expires, это снимет нагрузку с сервера
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault A7200
+  ExpiresByType text/html A1
+</IfModule>
+
+# ЧПУ.
+<IfModule mod_rewrite.c>
+  Options -MultiViews
+  RewriteEngine on
+  RewriteBase /
+
+  RewriteCond % !^/robots\.txt$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^.*$ /cms/admin/redirect.php [L,QSA,NE]
+</IfModule>

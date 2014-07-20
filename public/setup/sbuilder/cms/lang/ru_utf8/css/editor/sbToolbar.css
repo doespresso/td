@@ -1,0 +1,103 @@
+body
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+td
+{
+	font-size: 12px;
+    font-family: Arial, Sans-Serif;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+img
+{
+	cursor: default;
+	-moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+img.button
+{
+	width: 22px;
+	height: 22px;
+	margin: 1 2 1 2;
+	border: 1px solid transparent;
+}
+img.buttonOver
+{
+	width: 22px;
+	height: 22px;
+	margin: 1 2 1 2;
+	background-color: #c8dcf8;
+	border: 1px solid #737376;
+}
+img.buttonDown
+{
+	width: 22px;
+	height: 22px;
+    margin: 1 2 1 2;
+    background-color: #b1cdf3;
+	border: 1px solid #737376;
+}
+img.buttonChecked
+{
+	width: 22px;
+	height: 22px;
+    margin: 1 2 1 2;
+    background-color: #b1cdf3;
+	border: 1px solid #737376;
+}
+img.buttonDisabled
+{
+	width: 22px;
+	height: 22px;
+	margin: 1 2 1 2;
+	border: 1px solid transparent;
+	filter: gray() alpha(opacity=30); /* IE */
+    opacity: 0.30; /* Safari, Opera and Mozilla */
+}
+img.spacer 
+{
+	width: 2px;
+	height: 22px;
+	margin: 0 2 1 2;
+}
+img.toolbar
+{
+	width: 3px;
+	height: 22px;
+	margin: 0 3 0 3;
+}
+#toolbar
+{
+	width: 100%;
+	height: 100%;
+}
+td.toolbar
+{
+	height: 26px;
+	background: url(/cms/images/editor/toolbar_bg.gif);
+}
+td.toolbar_ar
+{
+	padding-bottom: 5px;
+	border-right: 1px solid #B67D56;
+	width: 11px;
+	text-align: center;
+	background-color: #ffbe78;
+	cursor: hand;
+	cursor: pointer;
+}
+img.toolbar_ar
+{
+	width: 7px;
+	height: 4px;
+	cursor: hand;
+	cursor: pointer;
+}

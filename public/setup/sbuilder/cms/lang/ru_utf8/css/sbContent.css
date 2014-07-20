@@ -1,0 +1,834 @@
+body
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    scrollbar-arrow-color: #b67d56;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-3dlight-color: #b67d56;
+    scrollbar-shadow-color: #b67d56;
+    scrollbar-track-color: #dfd4bc;
+    background-color: #e6e6e6;
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+}
+a, a:link, a:visited, a:active
+{
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+    text-decoration: none;
+    color: #A50101;
+}
+a:hover
+{
+    text-decoration: none;
+    color: #FF9933;
+}
+a.small, a.small:link, a.small:visited, a.small:active
+{
+    font-size: 8pt;
+    font-family: Verdana, Arial, Sans-Serif;
+    text-decoration: none;
+    color: #A50101;
+}
+a.small:hover
+{
+    text-decoration: none;
+    color: #FF9933;
+}
+/* для главного меню */
+.lowItemText, a.lowItemText:link, a.lowItemText:visited, a.lowItemText:active, a.lowItemText:focus
+{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    font-family: Tahoma, Arial, Sans-Serif;
+    text-align: left;
+}
+.highItemText, a.highItemText:link, a.highItemText:visited, a.highItemText:active, a.highItemText:focus
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: Tahoma, Arial, Sans-Serif;
+    text-align: left;
+}
+img.menu_arrow
+{
+    width: 4px;
+    height: 7px;
+    margin-top: 11px;
+}
+img.menu_icon
+{
+    width: 24px;
+    height: 24px;
+    border: 0px;
+    margin: 3px;
+}
+div.menu_text
+{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    height: 30px;
+    padding: 7px 0px 0px 7px;
+}
+div.menu_icon
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #FF9933;
+    width: 31px;
+    height: 30px;
+    border-right: 1px solid #fff5e0;
+}
+/* Для контекстного меню */
+.cmenuDiv
+{
+    padding: 2px;
+    border: 1px solid black;
+}
+
+.cmenuPaddingTD
+{
+    background-color: #FF9933;
+    border-right: 1px solid #fff5e0;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.cmenuHrTD
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+/* для панели разделов */
+div.resizeDiv
+{
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+    position: fixed;
+    top: 30px;
+    left: 10px;
+    background-color: #e6e6e6;
+}
+div.resizeDiv td
+{
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+}
+
+/* контентная область */
+#event_title
+{
+    color: #fff;
+    border-bottom: 1px solid #92805d;
+    border-top: 1px solid #92805d;
+    background: url(/cms/images/headerbg.jpg);
+    padding-left: 104px;
+    height: 24px;
+    font-size: 11px;
+    font-family: Verdana, Arial, Sans-Serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#event_content
+{
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+    width: 100%;
+    overflow-y: auto;
+    visibility: hidden;
+}
+
+#event_content td
+{
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+}
+
+/* Новый код для новых диалоговых окон */
+#event_content table.form
+{
+    border: 1px solid #000;
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+}
+
+#event_content table.form th.header
+{
+    background:  url(/cms/images/headerbg.jpg);
+    color: #FFF;
+    text-align: center;
+}
+
+#event_content table.form th
+{
+    font-size: 12px;
+    font-family: Arial, Sans-Serif;
+    text-align: right;
+    vertical-align: top;
+}
+
+#event_content table.form tr
+{
+    background-color: #EFE5D0;
+}
+
+#event_content table.form tr.even
+{
+    background-color: #FFF5E0;
+}
+
+#event_content table.form tr.drag
+{
+    background-color: #E1D4B9;
+}
+
+#event_content table.form td.footer
+{
+    text-align: center;
+    padding: 5px 2px 2px 2px;
+}
+
+#event_content table.form div.footer
+{
+    height: 44px;
+    background-color: #efe5d0;
+    padding-top: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#event_content table.form th.debug
+{
+    font-size: 12px;
+    font-family: Arial, Sans-Serif;
+    text-align: center;
+    vertical-align: top;
+}
+
+#event_content table.form tr.odd_debug
+{
+    background-color: #EFE5D0;
+}
+
+#event_content table.form tr.even_debug
+{
+    background-color: #FFF5E0;
+}
+
+#event_content table.form tr.even_debug td, #event_content table.form tr.odd_debug td
+{
+	font-family: Verdana, Arial, Sans-Serif;
+    font-size: 11px;
+} 
+
+#event_content sup.red
+{
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+    color:#f77368;
+}
+
+#event_content .border_div {
+    padding: 4px 0px 4px 0px;
+    border-top: 1px solid #E76E24;
+}
+#event_content .hint_div {
+    background-color: FFFFE1;
+    border: 1px solid black;
+    padding: 3px;
+    font-size: 8pt;
+}
+#event_content .hint_div a, #event_content .hint_div a:hover, #event_content .hint_div a:visited
+{
+    font-size: 11px;
+}
+
+/* для панели инструментов */
+img.button
+{
+    margin: 1px;
+    cursor: pointer;
+    cursor: hand;
+}
+img.buttonPress
+{
+    margin: 2 0 0 2;
+    cursor: default;
+}
+img.buttonDisabled
+{
+    margin: 1px;
+    cursor: default;
+}
+img.spacer
+{
+    cursor: default;
+}
+
+/* формы */
+form
+{
+    margin: 0px;
+    padding: 0px;
+}
+textarea
+{
+    font-size: 13px;
+    font-family: Tahoma, Arial, Sans-Serif;
+}
+input.maximizeBtn
+{
+    font-size:11px;
+    font-family: Tahoma, Arial, Sans-Serif;
+    width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px 14px;
+}
+option.selected
+{
+    background-color: #e2e2e2;
+}
+
+/* персонаж */
+#sb_character_hint
+{
+    font-size: 11px;
+}
+
+#sb_layout_info_text
+{
+    font-size: 11px;
+    font-family: Arial, Sans-Serif;
+}
+
+#sb_character_hint a, #sb_character_hint a:hover, #sb_character_hint a:visited
+{
+    font-size: 11px;
+}
+#sb_character_help, #sb_layout_info
+{
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    width: 300px;
+    z-index: 10000;
+    visibility: hidden;
+}
+#sb_character_img
+{
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    width: 135px;
+    height: 135px;
+    border: 0px;
+    z-index: 10000;
+}
+
+/* предупреждения системы */
+#sb_msg_div
+{
+    position: absolute;
+    top: 100px;
+    width: 400px;
+    display: none;
+    z-index: 11000;
+    padding: 10px;
+    background-color: #ffffcc;
+    border: 1px solid red;
+    cursor: default;
+}
+#sb_msg_div img
+{
+    margin-right: 10px;
+    border: 0px;
+    align: absmiddle;
+}
+#sb_msg_div_text
+{
+    font-family: Verdana, Arial, Tahoma, Sans-Serif;
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+}
+.sb_static_msg_div
+{
+    width: 400px;
+    padding: 10px;
+    background-color: #ffffcc;
+    border: 1px solid red;
+    cursor: default;
+}
+.sb_popup_msg_div
+{
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    visibility: hidden;
+    width: 400px;
+    padding: 10px;
+    background-color: #ffffcc;
+    border: 1px solid red;
+    cursor: default;
+    z-index: 10000;
+}
+.sb_popup_msg_div td, .sb_static_msg_div td
+{
+    background-color: #ffffcc;
+}
+.sb_msg_img
+{
+    margin: 0px 10px 0px 10px;
+    border: 0px;
+    align: absmiddle;
+}
+.sb_msg_text
+{
+    color: #000000;
+    font-size: 12px;
+    font-family: Verdana, Arial, Tahoma, Sans-Serif;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* закрывает активную область при вызове модального диалогового окна */
+div.disable
+{
+    z-index:10000;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:0px;
+    height:0px;
+    background-color:#FFF;
+    filter:alpha(opacity=40);
+    opacity:.4;
+    display: none;
+}
+
+/* Модуль "О системе" */
+.sb_about_div
+{
+    text-align:justify;
+    padding:30px;
+    width:90%;
+    background-color: #FFF5E0;
+    border: 1px solid #e76e24;
+}
+/* Фильтр */
+.sb_filter_header
+{
+    height: 26px;
+    background-color: #f5ead3;
+    border-bottom: 1px solid #b67d56;
+    text-align: left;
+    padding-left: 107px;
+    vertical-align: middle;
+}
+
+.sb_filter_text
+{
+    color: #b67d56;
+    font-size: 11px;
+    font-family: Arial, Sans-Serif;
+    font-weight: bold;
+    padding-right: 30px; 
+    padding-top: 3px;
+}
+
+.sb_filter_on
+{
+    border: 1px solid #d09f7d;
+    padding: 1px 8px 1px 8px;
+    color: #5d5d5d; 
+    font-weight: normal;
+    background-color: #ffffff;
+}
+
+#sb_filter
+{
+    width:100%;
+    border-bottom: 1px solid #b67d56;
+    background-color: #fff5e0;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.sb_filter_table
+{
+    width: 90%;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif;
+}
+
+.sb_filter_th
+{
+    background-color: #fff5e0;
+    padding-right: 15px;
+    padding-left: 30px;
+    text-align: left;
+    width: 140px;
+}
+
+.sb_filter_td
+{
+    background: url(/cms/images/bardelim.gif) repeat-y top right #fff5e0;
+    padding: 10px 50px 0 0;
+    text-align: left;
+    width: 25%;
+}
+
+.sb_filter_td_noborder
+{
+    background: #fff5e0;
+    padding-right: 50px;
+    text-align: left;
+    width: 25%;
+}
+
+.sb_filter_footer
+{
+    background-color: #f5ead3;
+    padding-right: 125px;
+    padding-top: 10px;
+    text-align: right;
+    height: 40px;
+    margin-top: 5px;
+}
+/* Вывод инфо для элементов */
+.smalltext
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 11px;
+}
+.demotext
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 11px;
+    color: #FF9900;
+}
+.delim
+{
+    padding: 0px; 
+    height: 1px; 
+    font-size: 1px; 
+    background: url(/cms/images/hdelim.gif) repeat-x;
+}
+
+/* Закладки */
+.sbTabsNormal
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2 20 2 20;
+    cursor: default;
+    color: #646464;
+}
+
+.sbTabsOver
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #A50034;
+    padding: 2 20 2 20;
+    cursor: default;
+}
+
+.sbTabsSelected
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2 20 2 20;
+    cursor: default;
+}
+
+.sbTabsSpace
+{
+    padding:0px; 
+    font-size:1px;
+}
+
+#sb_tabs
+{
+    margin-top:20px;
+    width:100%;
+    height:100%;
+    visibility:hidden;
+}
+
+#sb_tabs_table
+{
+    border: 0;
+    width: 95%;
+    height: 100%;
+    align: center; 
+}
+
+#sb_tabs_con_td
+{
+    background-color: #FFF5E0;
+    border: 1px solid #919B9C;
+    padding: 2px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#sb_tabs_con
+{
+    padding: 8px;
+    overflow: auto;
+}
+
+* html #sb_tabs_con
+{
+    width: 100%;
+    float: left;
+}
+
+#sb_tabs_bottom
+{
+    height: 44px;
+    background-color: #efe5d0;
+    padding-top: 12px;
+}
+
+/* Автокомплитер */
+#sb_autocomplete_div
+{
+	position:absolute;
+    width:200px;
+    height:200px;
+    overflow:auto;
+    border:1px solid #B67D56;
+    background-color:#E6E6E6;
+    text-align:left;
+    z-index:1000;
+    display:none;
+}
+
+#sb_autocomplete_div .img
+{
+	text-align: center;
+	width: 190px;
+	margin-top: 90px;
+}
+
+#sb_autocomplete_div div
+{
+    margin:1px;     
+    padding:3px;
+    cursor:hand;
+    cursor:pointer;
+    border: 1px solid #E6E6E6;
+}
+
+#sb_autocomplete_div table
+{
+	border-collapse: collapse;
+	width: 180px;
+}
+
+#sb_autocomplete_div td
+{
+	padding: 0px;
+	font-size: 10px;
+}
+
+#sb_autocomplete_div td.count
+{
+	text-align: right;
+	padding-right: 5px;
+	font-size: 8px;
+}
+
+#sb_autocomplete_div .option{
+}
+
+#sb_autocomplete_div .selOption{
+    background-color:#EFE5D0;
+    border: 1px solid red;
+}
+
+input.tp_button
+{
+	margin-top: 5px;
+	border: 1px solid #B10000;
+	background-color:#EFE5D0;
+}
+
+#pass_meter 
+{
+	margin-top:5px;
+	padding: 10px;
+	width: 300px;
+	text-align: center;
+	background-color: #eee;
+	border-color: #ddd !important;
+}
+
+#pass_meter.bad 
+{
+	background-color: #ffb78c;
+	border-color: #ff853c !important;
+}
+
+#pass_meter.good 
+{
+	background-color: #ffff88;
+	border-color: #fc0 !important;
+}
+
+#pass_meter.weak 
+{
+	background-color: #ffec8b;
+	border-color: #fc0 !important;
+}
+
+#pass_meter.short 
+{
+	background-color: #ffa0a0;
+	border-color: #f04040 !important;
+}
+
+#pass_meter.strong 
+{
+	background-color: #c3ff88;
+	border-color: #8dff1c !important;
+}
+
+.sb_codeditor {
+  border: 1px solid #ccccff;
+}
+
+.progressWrapper {
+	width: 357px;
+	overflow: hidden;
+}
+
+.progressWrapper .progressContainer {
+	margin: 5 0 5 0;
+	padding: 4px;
+	border: solid 1px #E8E8E8;
+	background-color: #F7F7F7;
+	overflow: hidden;
+}
+
+.progressWrapper .message {
+	margin: 1em 0;
+	padding: 10px 20px;
+	border: solid 1px #FFDD99;
+	background-color: #FFFFCC;
+	overflow: hidden;
+}
+
+.progressWrapper .red {
+	border: solid 1px #B50000;
+	background-color: #FFEBEB;
+}
+
+.progressWrapper .green {
+	border: solid 1px #DDF0DD;
+	background-color: #EBFFEB;
+}
+
+.progressWrapper .blue {
+	border: solid 1px #CEE2F2;
+	background-color: #F0F5FF;
+}
+
+.progressWrapper .progressName {
+	font-size: 9pt;
+	font-weight: 700;
+	color: #555;
+	width: 323px;
+	height: 14px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.progressWrapper .progressBarInProgress,
+.progressWrapper .progressBarComplete,
+.progressWrapper .progressBarError {
+	font-size: 0;
+	width: 0%;
+	height: 2px;
+	background-color: blue;
+	margin-top: 2px;
+}
+
+.progressWrapper .progressBarComplete {
+	width: 100%;
+	background-color: green;
+	visibility: hidden;
+}
+
+.progressWrapper .progressBarError {
+	width: 100%;
+	background-color: red;
+	visibility: hidden;
+}
+
+.progressWrapper .progressBarStatus {
+	margin-top: 2px;
+	width: 337px;
+	font-size: 8pt;
+	font-family: Arial;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.progressWrapper a.progressCancel {
+	font-size: 0;
+	display: block;
+	height: 14px;
+	width: 14px;
+	background-image: url(/cms/images/cancel_btn.gif);
+	background-repeat: no-repeat;
+	background-position: -14px 0px;
+	float: right;
+}
+
+.progressWrapper a.progressCancel:hover {
+	background-position: 0px 0px;
+}
+.custom_table_td th.header{
+	background: none !important;
+	color: #000000 !important;
+	border-bottom: 1px solid #000000;
+	font-size: 11px !important;
+	font-family: Arial, Sans-Serif !important;
+}
+span.custom_table_coll_cap, span.custom_table_row_cap {
+	font-size: 11px;
+	font-family: Arial, Sans-Serif;
+	font-weight: bold;
+}
+
+.clearfix:before,
+.clearfix:after {
+content: "\0020";
+display: block;
+height: 0;
+overflow: hidden;
+}
+
+.clearfix:after { clear: both; }
+
+.clearfix { zoom: 1; }

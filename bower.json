@@ -10,23 +10,23 @@
   "dependencies": {
     "jquery": "~1.9",
     "bootstrap": "3.2.0",
-    "backbone": null,
     "underscore": null,
-    "requirejs": null,
     "pace": null,
     "Snap.svg": null,
-    "skrollr": null,
     "swiper": null,
     "swiper-scrollbar": null,
     "swiper-3d-flow": null,
     "swiper-hash-navigation": null,
     "swiper-smooth-progress": null,
-    "skrollr-menu": null,
     "backbone.marionette": null,
     "animate.css": null,
     "animate.css-helpers": null,
     "bootstrap-select": null,
-    "switchery": null,
-    "odometer": null
+    "odometer": null,
+    "script.js": "~2.5.7",
+    "modernizr": "~2.8.3",
+    "platform": "Polymer/platform#~0.3.4",
+    "masonry": "~3.1.5",
+    "jquery-masonry": "~3.1.5"
   }
 }

@@ -1,0 +1,98 @@
+#sb_color_main_box 
+{
+  position:relative;
+  height:286px;
+  width:560px;
+}
+
+#sb_gradient_box
+{
+  cursor:crosshair;
+  top:15px;
+  position:absolute;
+  left:15px;
+  width:256px;
+  height:256px;
+}
+
+#sb_gradient_img
+{
+  display:block;
+  width:256px;
+  height:256px;
+}
+
+#sb_circle_img
+{
+  position:absolute;
+  height:11px;
+  width:11px;
+}
+
+#sb_hue_box
+{
+  position:absolute;
+  left:290px;
+  width:35px;
+  height:256px;
+  top:15px;
+}
+
+#sb_hue_img
+{
+  position:absolute;
+  height:256px;
+  width:19px;
+  left:8px;
+}
+
+#sb_arrows_img
+{
+  position:absolute;
+  height:9px;
+  width:35px;
+  left:0px;
+}        
+
+#sb_color_box
+{
+  position:absolute;
+  left:345px;
+  width:145px;
+  height:256px;
+  top:15px;
+}
+
+#sb_colors
+{
+  position:absolute;
+  border: 1px solid black;
+  height:50px;
+  width:180px;
+  top:0px;
+  left:0px;
+}
+
+#sb_quick_color
+{
+  position:absolute;
+  height:50px;
+  width:90px;
+  top:0px;
+  left:0px;
+} 
+
+#sb_static_color
+{
+  position:absolute;
+  height:50px;
+  width:90px;
+  top:0px;
+  left:90px;
+}
+
+#sb_colors_table
+{
+  position:absolute;
+  top:55px;
+}

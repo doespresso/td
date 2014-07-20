@@ -1,0 +1,134 @@
+body
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    scrollbar-arrow-color: #b67d56;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-3dlight-color: #b67d56;
+    scrollbar-shadow-color: #b67d56;
+    scrollbar-track-color: #dfd4bc;
+    background-color: #e6e6e6;
+}
+.sb_msg_div
+{
+    position: absolute;
+    top: 100px;
+    width: 400px;
+    display: none;
+    z-index: 1000;
+    padding: 10px;
+    background-color: #ffffcc;
+    border: 1px solid red;
+    cursor: default;
+}
+.sb_msg_div img
+{
+    margin: 0px 10px 0px 10px;
+    border: 0px;
+    align: absmiddle;
+}
+.sb_msg_div_text
+{
+    font-family: Arial, Tahoma, Verdana, Sans-Serif;
+    font-size: 12px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+a, a:visited, a:link
+{
+    text-decoration: none;
+    color: #A50101;
+}
+a:hover
+{
+    text-decoration: none;
+    color: #FF9933;
+}
+td
+{
+    font-family: Arial, Sans-Serif;
+    font-size: 10px;
+}
+
+div.login_img
+{
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+img.login_img
+{
+    border: 0px;
+    margin-right: 100px;
+}
+
+table.form
+{
+    margin-top: -15px;
+    border: 1px solid #000;
+    background-color: #fff5e0;
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+}
+
+table.form th.header
+{
+    background: url(/cms/images/headerbg.jpg) repeat-x;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+table.form th
+{
+    text-align: right;
+    padding: 5px 15px 5px 5px;
+    font-weight: bold;
+}
+
+table.form td
+{
+    padding: 5px;
+}
+
+table.form td.footer
+{
+    text-align: center;
+    padding: 5px 2px 2px 2px;
+}
+
+table.form div.footer
+{
+    height: 35px;
+    background-color: #efe5d0;
+    padding: 7px 20px 0 0;
+    text-align: right;
+    margin-top: 5px;
+}
+
+table.form div.pass_link
+{
+    text-align: right;
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+td.links
+{
+    vertical-align: bottom;
+    text-align: right;
+    padding: 10px;
+    font-size: 10px;
+    color: gray;
+    height: 1px;
+}
+.delim
+{
+    padding: 0px; 
+    height: 1px; 
+    font-size: 1px; 
+    background: url(/cms/images/hdelim.gif) repeat-x;
+}

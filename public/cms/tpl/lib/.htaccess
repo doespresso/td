@@ -1,0 +1,6 @@
+#
+# Дополнительные библиотеки и PHP скрипты для сайта
+# Подключение в макет дизайна сайта осуществляется первой строкой:
+# <?php include_once SB_BASEDIR . '/cms/tpl/lib/all.php'; ?>
+#
+Options -Indexes +FollowSymLinks

@@ -1,0 +1,144 @@
+html
+{
+	height: 1px;
+}
+body
+{
+    height: 1px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #e6e6e6;
+    background: url(/cms/images/navbarbg.jpg);
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+td
+{
+    font-family: arial, sans-serif;
+    font-size: 9pt;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+a
+{
+    text-decoration: none;
+    color: #dc1010;
+}
+a:hover
+{
+    text-decoration: none;
+}
+img.logo
+{
+    border: 0;
+    width: 53px;
+    height: 35px;
+    margin: 5px 30px 0 25px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none; 
+}
+img.button
+{
+    border: 0px;
+    margin: 1px;
+	cursor: pointer;
+ 	cursor: hand;
+ 	width: 24px;
+ 	height: 24px;
+ 	-moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.lowMenuText, a.lowMenuText:link, a.lowMenuText:visited, a.lowMenuText:active, a.lowMenuText:focus
+{
+	text-decoration: none;
+	color: #dc1010;
+	font-size: 12px;
+	font-family: tahoma, arial, verdana, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	-moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.highMenuText, a.highMenuText:link, a.highMenuText:visited, a.highMenuText:active, a.highMenuText:focus
+{
+	text-decoration: none;
+	color: #dc1010;
+	font-size: 12px;
+	font-family: tahoma, arial, verdana, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	-moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+td.nav_logo
+{
+    width: 1px;
+    vertical-align: top;
+}
+#sb_toolbar
+{
+    padding-top: 11px;
+    width: 1px;
+    vertical-align: top;
+}
+#sb_quick_toolbar
+{
+    padding-top: 11px;
+    width: 1px;
+    vertical-align: top;
+}
+span.online
+{
+    background-color: #23a055;
+    cursor: default;
+    font-size: 10px;
+    color: #fff;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+span.offline
+{
+    background-color: red;
+    cursor: default;
+    font-size: 10px;
+    color: #fff;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+#nav_table 
+{
+    height: 1px;
+    background: url(/cms/images/vertdelim.gif) repeat-y;
+}
+#nav_table td
+{
+    padding-left: 20px;
+    font-size: 10px;
+    vertical-align: top;
+    padding-top: 10px;
+    line-height: 13px;
+}
+div.disable
+{
+    z-index:10000;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:0px;
+    height:0px;
+    background-color:#FFF;
+    filter:alpha(opacity=40);
+    opacity:.4;
+    display: none;
+}
+
+#msg_td 
+{
+    text-align: right;
+}

@@ -1,0 +1,20 @@
+td
+{
+	
+	cursor: default;
+}
+.char
+{
+	position: absolute;
+	border: 1px solid black;
+    text-align: center;
+	width: 40px;
+	height: 40px;
+	top: 0;
+	left: 0;
+	background-color: #FFFFCC;
+	font-family: Arial;
+	font-size: 28px;
+	display: none;
+	z-index: 100;
+}

@@ -1,0 +1,211 @@
+#sb_editor_div
+{
+	padding: 5px;
+	width: 99%;
+	height: 100%;
+	overflow: auto;
+	background-color: #fff;
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+}
+
+#sb_editor_div td
+{
+	font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+}
+
+* html #sb_editor_div
+{
+	width: 100%;
+}
+
+.sb__ShowBlocks ol,
+.sb__ShowBlocks ul,
+.sb__ShowBlocks li,
+.sb__ShowBlocks p,
+.sb__ShowBlocks div,
+.sb__ShowBlocks pre,
+.sb__ShowBlocks address,
+.sb__ShowBlocks blockquote,
+.sb__ShowBlocks h1,
+.sb__ShowBlocks h2,
+.sb__ShowBlocks h3,
+.sb__ShowBlocks h4,
+.sb__ShowBlocks h5,
+.sb__ShowBlocks h6,
+.sb__ShowBlocks td,
+.sb__ShowBlocks th,
+.sb__ShowBlocks table
+{
+	background-repeat: no-repeat;
+	border: 1px dotted gray;
+	padding-top: 8px;
+	padding-left: 8px;
+}
+
+.sb__ShowBlocks ol
+{
+	background-image: url(/cms/images/editor/block_ol.gif);
+}
+
+.sb__ShowBlocks ul
+{
+	background-image: url(/cms/images/editor/block_ul.gif);
+}
+
+.sb__ShowBlocks li
+{
+	background-image: url(/cms/images/editor/block_li.gif);
+}
+
+.sb__ShowBlocks p
+{
+	background-image: url(/cms/images/editor/block_p.gif);
+}
+
+.sb__ShowBlocks div
+{
+	background-image: url(/cms/images/editor/block_div.gif);
+}
+
+.sb__ShowBlocks pre
+{
+	background-image: url(/cms/images/editor/block_pre.gif);
+}
+
+.sb__ShowBlocks address
+{
+	background-image: url(/cms/images/editor/block_address.gif);
+}
+
+.sb__ShowBlocks blockquote
+{
+	background-image: url(/cms/images/editor/block_blockquote.gif);
+}
+
+.sb__ShowBlocks h1
+{
+	background-image: url(/cms/images/editor/block_h1.gif);
+}
+
+.sb__ShowBlocks h2
+{
+	background-image: url(/cms/images/editor/block_h2.gif);
+}
+
+.sb__ShowBlocks h3
+{
+	background-image: url(/cms/images/editor/block_h3.gif);
+}
+
+.sb__ShowBlocks h4
+{
+	background-image: url(/cms/images/editor/block_h4.gif);
+}
+
+.sb__ShowBlocks h5
+{
+	background-image: url(/cms/images/editor/block_h5.gif);
+}
+
+.sb__ShowBlocks h6
+{
+	background-image: url(/cms/images/editor/block_h6.gif);
+}
+
+.sb__ShowBlocks td
+{
+	background-image: url(/cms/images/editor/block_td.gif);
+}
+
+.sb__ShowBlocks th
+{
+	background-image: url(/cms/images/editor/block_th.gif);
+}
+
+.sb__ShowBlocks table
+{
+	background-image: url(/cms/images/editor/block_table.gif);
+}
+
+.sb__Flash, .sb__AVI, .sb__MOV, .sb__RM, .sb__UnknownObject
+{
+	border: #cc0000 1px dotted;
+	background-position: center center;
+	background-image: url(/cms/images/editor/flash.gif);
+	background-repeat: no-repeat;
+	background-color:#ffffcc;
+	width: 80px;
+	height: 80px;
+}
+
+.sb__Flash, .sb__AVI, .sb__MOV, .sb__RM
+{
+	background-image: url(/cms/images/editor/flash.gif);
+}
+
+.sb__AVI
+{
+	background-image: url(/cms/images/editor/windowsmedia.gif);
+}
+
+.sb__MOV
+{
+	background-image: url(/cms/images/editor/quicktime.gif);
+}
+
+.sb__RM
+{
+	background-image: url(/cms/images/editor/realmedia.gif);
+}
+
+.sb__UnknownObject
+{
+	background-image: url(/cms/images/editor/plugin.gif);
+}
+
+.sb__Anchor
+{
+	border: 1px dotted #00F;
+	background-position: center center;
+	background-image: url(/cms/images/editor/anchor.gif);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 15px;
+	vertical-align: middle;
+}
+
+.sb__AnchorC
+{
+	border: 1px dotted #00F;
+	background-position: 1px center;
+	background-image: url(/cms/images/editor/anchor.gif);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+}
+
+.sb__PageBreak
+{
+	background-position: center center;
+	background-image: url(/cms/images/editor/pagebreak.gif);
+	background-repeat: no-repeat;
+	clear: both;
+	display: block;
+	float: none;
+	width: 100%;
+	border-top: #999999 1px dotted;
+	border-bottom: #999999 1px dotted;
+	border-right: 0px;
+	border-left: 0px;
+	height: 5px;
+}
+
+.sb__DragDiv
+{
+	padding: 2px;
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 12px;
+	border: 1px dotted black; 
+	background-color: #FFFFE1;
+}

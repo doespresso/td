@@ -1,0 +1,85 @@
+#files_list
+{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+#files_list div.list_element
+{
+    border: 1px solid #e6e6e6;
+    cursor: default;
+    width: 99%;
+    margin-top: 3px;
+}
+
+#files_list td
+{
+    vertical-align: top;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+#files_list td.list_element_td
+{
+    width: 100%;
+}
+
+#files_list td.list_element_date
+{
+    border-top: 1px solid #B67D56;
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 10px;
+    color: gray;
+}
+
+#files_list .smalltext
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 11px;
+}
+#files_list b.elem_title
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 12px;
+    color: #A50101;
+}
+#files_list .smalltext a, #files_list .smalltext a:link, #files_list .smalltext a:visited
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 11px;
+    color: #33805E;
+}
+
+#files_list .smalltext a:hover
+{
+    color: #FF9933;
+}
+
+#sb_files_show_image_img
+{
+    position: absolute;
+    top: -3000px;
+    left: -3000px;
+    visibility: hidden;
+}
+
+#sb_files_show_image_div
+{
+	padding: 5px;
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    width: 220px;
+    height: 230px;
+    z-index: 10000;
+    visibility: hidden;
+    background-color: #ffffcc;
+    border: 1px dotted black;
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+}
